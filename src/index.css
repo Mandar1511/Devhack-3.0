@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("C:\Users\Mandar Deshpande\Desktop\hackathon\src\background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-color: black;
+}
+
+.name,
+.date,
+.dist,
+.diameter,
+.velocity {
+  color: #00ffdd;
+}
+
+.form {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.input {
+  height: 50px;
+  width: 390px;
+  background-color: #effffd;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 20px;
+  border: 3px solid black;
+  border-color: black;
+}
+.diameter {
+  position: relative;
+  right: 117px;
+}
+.velocity {
+  position: relative;
+  right: 82px;
+}
+.Content {
+  text-align: center;
+
+  position: relative;
+  right: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.span4 {
+  position: relative;
+  left: 94px;
+}
+
+.span5 {
+  position: relative;
+  left: 94px;
+}
+
+.span3 {
+  position: relative;
+  left: 100px;
+}
+
+.span2 {
+  position: relative;
+  left: 90px;
+}
+
+.span1 {
+  position: relative;
+  left: 96px;
+}
+
+.description {
+  text-align: center;
+  margin-right: 200px;
+  color: #caf0f8;
+  margin-left: 200px;
+  font-family: poppins;
+  font-weight: 200;
+  font-size: 1.2em;
+}
+
+.title {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 45px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: linear-gradient(to right, #2fa4ff, #00ffdd, #e8ffc2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.sky {
+  margin-top: 0px;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  transform: rotateZ(20deg);
+}
+
+.star {
+  margin-top: 50px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  height: 4px;
+  background: linear-gradient(-45deg, #ffffff, rgba(0, 0, 255, 0));
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px #ffffff);
+  animation: tail 3s ease-in-out infinite, falling 3s ease-in-out infinite;
+}
+
+@keyframes tail {
+  0% {
+    width: 0px;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes falling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
+.star::before,
+.star::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #ffffff,
+    rgba(0, 0, 255, 0)
+  );
+  border-radius: 100%;
+  transform: translateX(50%) rotateZ(45deg);
+  animation: shining 3s ease-in-out infinite;
+}
+
+@keyframes shining {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+.star::after {
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.star:nth-child(1) {
+  top: calc(50% - 200px);
+  left: calc(50% - 250px);
+  animation-delay: 1s;
+}
+
+.star:nth-child(1)::before,
+.star:nth-child(1)::after {
+  animation-delay: 1s;
+}
+
+.star:nth-child(2) {
+  top: calc(50% - 20px);
+  left: calc(50% - 600px);
+  animation-delay: 1.3s;
+}
+
+.star:nth-child(2)::before,
+.star:nth-child(2)::after {
+  animation-delay: 1.3s;
+}
+
+.star:nth-child(3) {
+  top: calc(50% - 100px);
+  left: calc(50% - 0.5px);
+  animation-delay: 1.6s;
+}
+
+.star:nth-child(3)::before,
+.star:nth-child(3)::after {
+  animation-delay: 1.6s;
+}
+
+.star:nth-child(4) {
+  top: calc(50% - 10px);
+  left: calc(50% - 100px);
+  animation-delay: 1.9s;
+}
+
+.star:nth-child(4)::before,
+.star:nth-child(4)::after {
+  animation-delay: 1.9s;
+}
